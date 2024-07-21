@@ -1,0 +1,119 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+.home {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  background: #4a90e2;
+  color: white;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+.intro, .experience, .skills, .about, .cta {
+  background: white;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro .profile-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro .profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #4a90e2;
+}
+
+.intro p, .about p, .cta p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.experience h3, .skills h3, .about h3, .cta h3 {
+  font-size: 1.8rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience ul, .skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience li, .skills li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.experience li p {
+  margin: 5px 0 0 20px;
+}
+
+.skills li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.skills li::before {
+  content: '•';
+  color: #4a90e2;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta button:hover {
+  background: #357abd;
+}
+
+@media (min-width: 768px) {
+  .intro p, .about p, .cta p {
+    text-align: left;
+  }
+}
